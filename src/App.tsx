@@ -5,18 +5,19 @@ import sac from './assets/sac.png';
 import logo from './assets/logo.png';
 import CRISPR from './assets/CRISPR.png';
 import elevate from './assets/elevate.png';
-import eklavya from './assets/eklavya.png';
 import estoria from './assets/estoria.png';
 import Iotics from './assets/Iotics.png';
 import orator from './assets/orator.png';
 import probe from './assets/ProbeLogo.png';
 import strokes from './assets/StrokesLogo.png';
-import media from './assets/mediacell.png';
+//mport media from './assets/mediacell.png';
 import dotslash from './assets/dotslash.jpg';
 import crescendo from './assets/crescando.jpg';
 import dtraxia from './assets/dtraxia.jpg';
 import synergy from './assets/synergy.png';
-
+import eklavya from './assets/eklavya.png';
+import avlok from './assets/avlok.jpg';
+import dimensions from './assets/dimensions.jpg';
 interface Club {
   name: string;
   category: 'technical' | 'non-technical';
@@ -44,7 +45,7 @@ const clubs: Club[] = [
     //website: 'https://dotslash-iiit.com',
     instagram: 'thedotslashcommunity',
     image: dotslash,
-    description: 'Coding and development community'
+    description: 'Coding Community'
   },
   {
     name: 'CRISPR',
@@ -69,6 +70,14 @@ const clubs: Club[] = [
     instagram: 'strokes_iiitn_',
     image: strokes,
     description: 'Design and creative technology'
+  },
+  {
+    name: 'DIMENSIONS',
+    category: 'technical',
+    //website: 'https://strokes-iiit.com',
+    instagram: 'dimensions.iiitn',
+    image: dimensions,
+    description: 'Game Dev and XR community'
   },
   // Non-Technical Clubs
   {
@@ -128,11 +137,11 @@ const clubs: Club[] = [
     description: 'Sports and fitness community'
   },
   {
-    name: 'MEDIA CELL',
+    name: 'AVLOK',
     category: 'non-technical',
     //website: 'https://mediacell-iiit.com',
     instagram: 'sac_iiitn',
-    image: media,
+    image: avlok,
     description: ' Media and Outreach'
   }
 ];
@@ -249,10 +258,16 @@ function App() {
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
             Discover your passion, build your skills, and connect with like-minded individuals through our diverse range of technical and non-technical clubs.
           </p>
-          <div className="mt-12 flex items-center justify-center gap-2 text-blue-400 text-lg">
-            <Users className="w-6 h-6" />
-            <span>Join the Community</span>
-          </div>
+          <a 
+href="https://www.instagram.com/sac_iiitn?igsh=MXhraTMzaXVwamczNA==" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="mt-12 flex items-center justify-center gap-2 text-blue-400 text-lg cursor-pointer"
+>
+  <Users className="w-6 h-6" />
+  <span>Join the Community</span>
+</a>
+
         </div>
         
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
