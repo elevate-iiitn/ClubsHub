@@ -3,6 +3,19 @@ import { ExternalLink, Instagram, Heart, Users, Award } from 'lucide-react';
 import parking from './assets/parking.jpg';
 import sac from './assets/sac.png';
 import logo from './assets/logo.png';
+import CRISPR from './assets/CRISPR.png';
+import elevate from './assets/elevate.png';
+import eklavya from './assets/eklavya.png';
+import estoria from './assets/estoria.png';
+import Iotics from './assets/Iotics.png';
+import orator from './assets/orator.png';
+import probe from './assets/ProbeLogo.png';
+import strokes from './assets/StrokesLogo.png';
+import media from './assets/mediacell.png';
+import dotslash from './assets/dotslash.jpg';
+import crescendo from './assets/crescando.jpg';
+import dtraxia from './assets/dtraxia.jpg';
+import synergy from './assets/synergy.png';
 
 interface Club {
   name: string;
@@ -21,7 +34,7 @@ const clubs: Club[] = [
     category: 'technical',
     //website: 'https://elevate-iiit.com',
     instagram: 'elevate_iiitn',
-    image: 'https://picsum.photos/400/300?random=1',
+    image: elevate,
     description: 'Premier technical club driving innovation and excellence',
     isProminent: true
   },
@@ -30,7 +43,7 @@ const clubs: Club[] = [
     category: 'technical',
     //website: 'https://dotslash-iiit.com',
     instagram: 'thedotslashcommunity',
-    image: 'https://picsum.photos/400/300?random=2',
+    image: dotslash,
     description: 'Coding and development community'
   },
   {
@@ -38,7 +51,7 @@ const clubs: Club[] = [
     category: 'technical',
     //website: 'https://crispr-iiit.com',
     instagram: 'crispr_iiitn',
-    image: 'https://picsum.photos/400/300?random=3',
+    image: CRISPR,
     description: 'Biotechnology and research club'
   },
   {
@@ -46,7 +59,7 @@ const clubs: Club[] = [
     category: 'technical',
     //website: 'https://iotics-iiit.com',
     instagram: 'iotics_iiitn',
-    image: 'https://picsum.photos/400/300?random=4',
+    image: Iotics,
     description: 'IoT and embedded systems'
   },
   {
@@ -54,7 +67,7 @@ const clubs: Club[] = [
     category: 'technical',
     //website: 'https://strokes-iiit.com',
     instagram: 'strokes_iiitn',
-    image: 'https://picsum.photos/400/300?random=5',
+    image: strokes,
     description: 'Design and creative technology'
   },
   {
@@ -62,7 +75,7 @@ const clubs: Club[] = [
     category: 'technical',
     //website: 'https://probe-iiit.com',
     instagram: 'probe.iiitn',
-    image: 'https://picsum.photos/400/300?random=6',
+    image: probe,
     description: 'Investigative journalism and research'
   },
   // Non-Technical Clubs
@@ -71,7 +84,7 @@ const clubs: Club[] = [
     category: 'non-technical',
     //website: 'https://mediacell-iiit.com',
     instagram: 'sac_iiitn',
-    image: 'https://picsum.photos/400/300?random=7',
+    image: media,
     description: 'Photography and media production'
   },
   {
@@ -79,7 +92,7 @@ const clubs: Club[] = [
     category: 'non-technical',
     //website: 'https://dtaraxia-iiit.com',
     instagram: 'd.taraxia_iiitn',
-    image: 'https://picsum.photos/400/300?random=8',
+    image: dtraxia,
     description: 'Mental health and wellness'
   },
   {
@@ -87,7 +100,7 @@ const clubs: Club[] = [
     category: 'non-technical',
     //website: 'https://cresendo-iiit.com',
     instagram: 'crescendo_iiitn',
-    image: 'https://picsum.photos/400/300?random=9',
+    image:crescendo,
     description: 'Music and performing arts'
   },
   {
@@ -95,7 +108,7 @@ const clubs: Club[] = [
     category: 'non-technical',
     //website: 'https://estoria-iiit.com',
     instagram: 'estoria_iiitn',
-    image: 'https://picsum.photos/400/300?random=10',
+    image: estoria,
     description: 'Literary and creative writing'
   },
   {
@@ -103,7 +116,7 @@ const clubs: Club[] = [
     category: 'non-technical',
     //website: 'https://synergy-iiit.com',
     instagram: 'synergy_iiit',
-    image: 'https://picsum.photos/400/300?random=11',
+    image: synergy,
     description: 'Event management and coordination'
   },
   {
@@ -111,7 +124,7 @@ const clubs: Club[] = [
     category: 'non-technical',
     //website: 'https://orator-iiit.com',
     instagram: 'orator_iiitn',
-    image: 'https://picsum.photos/400/300?random=12',
+    image: orator,
     description: 'Public speaking and debate'
   },
   {
@@ -119,7 +132,7 @@ const clubs: Club[] = [
     category: 'non-technical',
     //website: 'https://eklavya-iiit.com',
     instagram: 'kshitij.iiitn',
-    image: 'https://picsum.photos/400/300?random=13',
+    image: eklavya,
     description: 'Sports and fitness community'
   }
 ];
@@ -150,7 +163,7 @@ const ClubCard: React.FC<{ club: Club }> = ({ club }) => {
         <img 
           src={club.image} 
           alt={club.name}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="absolute inset-0 w-full h-full object-contain bg-slate-900 transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
         
