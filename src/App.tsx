@@ -131,7 +131,7 @@ const clubs: Club[] = [
     name: 'EKLAVYA',
     category: 'non-technical',
     //website: 'https://eklavya-iiit.com',
-    instagram: 'kshitij.iiitn',
+    instagram: 'eklavya_iiitn',
     image: eklavya,
     description: 'Sports and fitness community'
   }
