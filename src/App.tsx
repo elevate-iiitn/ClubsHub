@@ -70,22 +70,22 @@ const clubs: Club[] = [
     image: strokes,
     description: 'Design and creative technology'
   },
+  // Non-Technical Clubs
+  {
+    name: 'ORATOR',
+    category: 'non-technical',
+    //website: 'https://orator-iiit.com',
+    instagram: 'orator_iiitn',
+    image: orator,
+    description: 'Public speaking and debate'
+  },
   {
     name: 'PROBE',
-    category: 'technical',
+    category: 'non-technical',
     //website: 'https://probe-iiit.com',
     instagram: 'probe.iiitn',
     image: probe,
     description: 'Photography and Cinematography'
-  },
-  // Non-Technical Clubs
-  {
-    name: 'MEDIA CELL',
-    category: 'non-technical',
-    //website: 'https://mediacell-iiit.com',
-    instagram: 'sac_iiitn',
-    image: media,
-    description: ' Media and Outreach'
   },
   {
     name: 'DTARAXIA',
@@ -120,20 +120,20 @@ const clubs: Club[] = [
     description: 'E-sports club'
   },
   {
-    name: 'ORATOR',
-    category: 'non-technical',
-    //website: 'https://orator-iiit.com',
-    instagram: 'orator_iiitn',
-    image: orator,
-    description: 'Public speaking and debate'
-  },
-  {
     name: 'EKLAVYA',
     category: 'non-technical',
     //website: 'https://eklavya-iiit.com',
     instagram: 'eklavya_iiitn',
     image: eklavya,
     description: 'Sports and fitness community'
+  },
+  {
+    name: 'MEDIA CELL',
+    category: 'non-technical',
+    //website: 'https://mediacell-iiit.com',
+    instagram: 'sac_iiitn',
+    image: media,
+    description: ' Media and Outreach'
   }
 ];
 
