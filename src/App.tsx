@@ -66,7 +66,7 @@ const clubs: Club[] = [
     name: 'STROKES',
     category: 'technical',
     //website: 'https://strokes-iiit.com',
-    instagram: 'strokes_iiitn',
+    instagram: 'strokes_iiitn_',
     image: strokes,
     description: 'Design and creative technology'
   },
