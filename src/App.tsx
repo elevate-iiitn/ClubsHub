@@ -52,7 +52,7 @@ const clubs: Club[] = [
     //website: 'https://crispr-iiit.com',
     instagram: 'crispr_iiitn',
     image: CRISPR,
-    description: 'Biotechnology and research club'
+    description: ' central research initiative and student pulic relations'
   },
   {
     name: 'IOTICS',
@@ -76,7 +76,7 @@ const clubs: Club[] = [
     //website: 'https://probe-iiit.com',
     instagram: 'probe.iiitn',
     image: probe,
-    description: 'Investigative journalism and research'
+    description: 'Photography and Cinematography'
   },
   // Non-Technical Clubs
   {
@@ -85,7 +85,7 @@ const clubs: Club[] = [
     //website: 'https://mediacell-iiit.com',
     instagram: 'sac_iiitn',
     image: media,
-    description: 'Photography and media production'
+    description: ' media and outreach'
   },
   {
     name: 'DTARAXIA',
@@ -93,7 +93,7 @@ const clubs: Club[] = [
     //website: 'https://dtaraxia-iiit.com',
     instagram: 'd.taraxia_iiitn',
     image: dtraxia,
-    description: 'Mental health and wellness'
+    description: 'Dance club'
   },
   {
     name: 'CRESENDO',
@@ -109,7 +109,7 @@ const clubs: Club[] = [
     //website: 'https://estoria-iiit.com',
     instagram: 'estoria_iiitn',
     image: estoria,
-    description: 'Literary and creative writing'
+    description: 'Drama club'
   },
   {
     name: 'SYNERGY',
@@ -117,7 +117,7 @@ const clubs: Club[] = [
     //website: 'https://synergy-iiit.com',
     instagram: 'synergy_iiit',
     image: synergy,
-    description: 'Event management and coordination'
+    description: 'E-sports club'
   },
   {
     name: 'ORATOR',
@@ -316,7 +316,7 @@ function App() {
               <div className="space-y-2">
                 <h3 className="text-white font-semibold text-lg">IIIT Nagpur</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Empowering student communities since 2023
+                  Empowering student communities
                 </p>
               </div>
             </div>
@@ -378,7 +378,7 @@ function App() {
       className="w-8 h-8 object-contain"
     />
     <p className="text-gray-500 text-sm">
-      © 2024 Student Activity Center, IIIT Nagpur. All rights reserved.
+      © 2025 Student Activity Center, IIIT Nagpur. All rights reserved.
     </p>
   </div>
 </div>
