@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { ExternalLink, Instagram, Heart, Users, Award } from 'lucide-react';
+import parking from './assets/parking.jpg';
+import sac from './assets/sac.png';
+import logo from './assets/logo.png';
 
 interface Club {
   name: string;
@@ -17,7 +20,7 @@ const clubs: Club[] = [
     name: 'ELEVATE',
     category: 'technical',
     //website: 'https://elevate-iiit.com',
-    instagram: 'elevate_iiit',
+    instagram: 'elevate_iiitn',
     image: 'https://picsum.photos/400/300?random=1',
     description: 'Premier technical club driving innovation and excellence',
     isProminent: true
@@ -26,7 +29,7 @@ const clubs: Club[] = [
     name: 'DOTSLASH',
     category: 'technical',
     //website: 'https://dotslash-iiit.com',
-    instagram: 'dotslash_iiit',
+    instagram: 'thedotslashcommunity',
     image: 'https://picsum.photos/400/300?random=2',
     description: 'Coding and development community'
   },
@@ -34,7 +37,7 @@ const clubs: Club[] = [
     name: 'CRISPR',
     category: 'technical',
     //website: 'https://crispr-iiit.com',
-    instagram: 'crispr_iiit',
+    instagram: 'crispr_iiitn',
     image: 'https://picsum.photos/400/300?random=3',
     description: 'Biotechnology and research club'
   },
@@ -42,7 +45,7 @@ const clubs: Club[] = [
     name: 'IOTICS',
     category: 'technical',
     //website: 'https://iotics-iiit.com',
-    instagram: 'iotics_iiit',
+    instagram: 'iotics_iiitn',
     image: 'https://picsum.photos/400/300?random=4',
     description: 'IoT and embedded systems'
   },
@@ -50,7 +53,7 @@ const clubs: Club[] = [
     name: 'STROKES',
     category: 'technical',
     //website: 'https://strokes-iiit.com',
-    instagram: 'strokes_iiit',
+    instagram: 'strokes_iiitn',
     image: 'https://picsum.photos/400/300?random=5',
     description: 'Design and creative technology'
   },
@@ -58,7 +61,7 @@ const clubs: Club[] = [
     name: 'PROBE',
     category: 'technical',
     //website: 'https://probe-iiit.com',
-    instagram: 'probe_iiit',
+    instagram: 'probe.iiitn',
     image: 'https://picsum.photos/400/300?random=6',
     description: 'Investigative journalism and research'
   },
@@ -67,7 +70,7 @@ const clubs: Club[] = [
     name: 'MEDIA CELL',
     category: 'non-technical',
     //website: 'https://mediacell-iiit.com',
-    instagram: 'mediacell_iiit',
+    instagram: 'sac_iiitn',
     image: 'https://picsum.photos/400/300?random=7',
     description: 'Photography and media production'
   },
@@ -75,7 +78,7 @@ const clubs: Club[] = [
     name: 'DTARAXIA',
     category: 'non-technical',
     //website: 'https://dtaraxia-iiit.com',
-    instagram: 'dtaraxia_iiit',
+    instagram: 'd.taraxia_iiitn',
     image: 'https://picsum.photos/400/300?random=8',
     description: 'Mental health and wellness'
   },
@@ -83,7 +86,7 @@ const clubs: Club[] = [
     name: 'CRESENDO',
     category: 'non-technical',
     //website: 'https://cresendo-iiit.com',
-    instagram: 'cresendo_iiit',
+    instagram: 'crescendo_iiitn',
     image: 'https://picsum.photos/400/300?random=9',
     description: 'Music and performing arts'
   },
@@ -91,7 +94,7 @@ const clubs: Club[] = [
     name: 'ESTORIA',
     category: 'non-technical',
     //website: 'https://estoria-iiit.com',
-    instagram: 'estoria_iiit',
+    instagram: 'estoria_iiitn',
     image: 'https://picsum.photos/400/300?random=10',
     description: 'Literary and creative writing'
   },
@@ -107,7 +110,7 @@ const clubs: Club[] = [
     name: 'ORATOR',
     category: 'non-technical',
     //website: 'https://orator-iiit.com',
-    instagram: 'orator_iiit',
+    instagram: 'orator_iiitn',
     image: 'https://picsum.photos/400/300?random=12',
     description: 'Public speaking and debate'
   },
@@ -115,7 +118,7 @@ const clubs: Club[] = [
     name: 'EKLAVYA',
     category: 'non-technical',
     //website: 'https://eklavya-iiit.com',
-    instagram: 'eklavya_iiit',
+    instagram: 'kshitij.iiitn',
     image: 'https://picsum.photos/400/300?random=13',
     description: 'Sports and fitness community'
   }
@@ -202,7 +205,11 @@ function App() {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-              SAC
+               <img 
+    src={sac} 
+    alt="SAC Logo" 
+    className="w-12 h-12 object-contain"
+  />
             </div>
             <span className="text-white font-medium text-lg">Student Activity Council</span>
           </div>
@@ -214,7 +221,7 @@ function App() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://picsum.photos/1920/1080?random=100')`,
+            backgroundImage: `url('${parking}')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
@@ -330,7 +337,7 @@ function App() {
                   Instagram
                 </a>
                 <a 
-                  href="https://linkedin.com/company/sac-iiitn" 
+                  href="https://www.linkedin.com/company/training-and-placement-cell-iiit-nagpur/posts/?feedView=all" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
@@ -338,7 +345,7 @@ function App() {
                   LinkedIn
                 </a>
                 <a 
-                  href="https://twitter.com/sac_iiitn" 
+                  href="https://x.com/IIITN_OFFICIAL" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
@@ -350,11 +357,19 @@ function App() {
           </div>
 
           {/* Bottom Section - Copyright */}
-          <div className="pt-8 border-t border-white/10">
-            <p className="text-center text-gray-500 text-sm">
-              © 2024 Student Activity Center, IIIT Nagpur. All rights reserved.
-            </p>
-          </div>
+         <div className="pt-8 border-t border-white/10">
+  <div className="flex items-center justify-center gap-3">
+    <img
+      src={logo}
+      alt="Logo"
+      className="w-8 h-8 object-contain"
+    />
+    <p className="text-gray-500 text-sm">
+      © 2024 Student Activity Center, IIIT Nagpur. All rights reserved.
+    </p>
+  </div>
+</div>
+
         </div>
       </footer>
     </div>
