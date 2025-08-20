@@ -52,7 +52,7 @@ const clubs: Club[] = [
     //website: 'https://crispr-iiit.com',
     instagram: 'crispr_iiitn',
     image: CRISPR,
-    description: ' central research initiative and student pulic relations'
+    description: ' Central Research Initiative and Student Public Relations'
   },
   {
     name: 'IOTICS',
@@ -85,7 +85,7 @@ const clubs: Club[] = [
     //website: 'https://mediacell-iiit.com',
     instagram: 'sac_iiitn',
     image: media,
-    description: ' media and outreach'
+    description: ' Media and Outreach'
   },
   {
     name: 'DTARAXIA',
