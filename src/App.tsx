@@ -37,7 +37,7 @@ const clubs: Club[] = [
     instagram: 'elevate_iiitn',
     image: elevate,
     description: 'Premier technical club driving innovation and excellence',
-    isProminent: true
+    isProminent: false
   },
   {
     name: 'DOTSLASH',
@@ -46,14 +46,6 @@ const clubs: Club[] = [
     instagram: 'thedotslashcommunity',
     image: dotslash,
     description: 'Coding Community'
-  },
-  {
-    name: 'CRISPR',
-    category: 'technical',
-    //website: 'https://crispr-iiit.com',
-    instagram: 'crispr_iiitn',
-    image: CRISPR,
-    description: ' Central Research Initiative and Student Public Relations'
   },
   {
     name: 'IOTICS',
@@ -79,6 +71,14 @@ const clubs: Club[] = [
     image: dimensions,
     description: 'Game Dev and XR community'
   },
+  {
+    name: 'CRISPR',
+    category: 'technical',
+    //website: 'https://crispr-iiit.com',
+    instagram: 'crispr_iiitn',
+    image: CRISPR,
+    description: ' Central Research Initiative and Student Public Relations'
+  }
   // Non-Technical Clubs
   {
     name: 'ORATOR',
@@ -87,6 +87,14 @@ const clubs: Club[] = [
     instagram: 'orator_iiitn',
     image: orator,
     description: 'Public speaking and debate'
+  },
+  {
+    name: 'AVLOK',
+    category: 'non-technical',
+    //website: 'https://mediacell-iiit.com',
+    instagram: 'sac_iiitn',
+    image: avlok,
+    description: ' Media and Outreach'
   },
   {
     name: 'PROBE',
@@ -135,14 +143,6 @@ const clubs: Club[] = [
     instagram: 'eklavya_iiitn',
     image: eklavya,
     description: 'Sports and fitness community'
-  },
-  {
-    name: 'AVLOK',
-    category: 'non-technical',
-    //website: 'https://mediacell-iiit.com',
-    instagram: 'sac_iiitn',
-    image: avlok,
-    description: ' Media and Outreach'
   }
 ];
 
