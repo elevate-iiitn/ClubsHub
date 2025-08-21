@@ -20,7 +20,7 @@ import avlok from './assets/avlok.jpg';
 import dimensions from './assets/dimensions.jpg';
 interface Club {
   name: string;
-  category: 'technical' | 'non-technical'|'Sports';
+  category: 'technical' | 'non-technical'| 'Sports';
   website?: string;
   instagram?: string;
   image: string;
@@ -254,7 +254,7 @@ function App() {
             IIIT NAGPUR
           </h1>
           <h2 className="text-2xl md:text-4xl text-gray-300 mb-8 font-light">
-            College Clubs & Communities
+            College Clubs and Communities
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
             Discover your passion, build your skills, and connect with like-minded individuals through our diverse range of technical and non-technical clubs.
