@@ -306,7 +306,7 @@ href="https://www.instagram.com/sac_iiitn?igsh=MXhraTMzaXVwamczNA=="
               Cultural Clubs
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Express your creativity, develop soft skills, and explore diverse interests
+              Express your creativity, develop soft skills, and explore diverse interests.
             </p>
           </div>
           
