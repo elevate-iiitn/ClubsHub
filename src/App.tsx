@@ -20,7 +20,7 @@ import avlok from './assets/avlok.jpg';
 import dimensions from './assets/dimensions.jpg';
 interface Club {
   name: string;
-  category: 'technical' | 'non-technical';
+  category: 'technical' | 'non-technical'|'Sports';
   website?: string;
   instagram?: string;
   image: string;
@@ -122,7 +122,7 @@ const clubs: Club[] = [
   },
   {
     name: 'SYNERGY',
-    category: 'non-technical',
+    category: 'Sports',
     //website: 'https://synergy-iiit.com',
     instagram: 'synergy_iiit',
     image: synergy,
@@ -130,7 +130,7 @@ const clubs: Club[] = [
   },
   {
     name: 'EKLAVYA',
-    category: 'non-technical',
+    category: 'Sports',
     //website: 'https://eklavya-iiit.com',
     instagram: 'eklavya_iiitn',
     image: eklavya,
@@ -219,6 +219,7 @@ const ClubCard: React.FC<{ club: Club }> = ({ club }) => {
 function App() {
   const technicalClubs = clubs.filter(club => club.category === 'technical');
   const nonTechnicalClubs = clubs.filter(club => club.category === 'non-technical');
+  const Sportsclubs=clubs.filter(club => club.category === 'Sports');
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-blue-900 to-slate-900">
@@ -302,7 +303,7 @@ href="https://www.instagram.com/sac_iiitn?igsh=MXhraTMzaXVwamczNA=="
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Non-Technical Clubs
+              Cultural Clubs
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Express your creativity, develop soft skills, and explore diverse interests
@@ -311,6 +312,24 @@ href="https://www.instagram.com/sac_iiitn?igsh=MXhraTMzaXVwamczNA=="
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {nonTechnicalClubs.map((club) => (
+              <ClubCard key={club.name} club={club} />
+            ))}
+          </div>
+        </div>
+      </section>
+        <section className="py-20 px-4 bg-gradient-to-r from-slate-900/50 to-blue-900/30">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Sports Clubs
+            </h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Upskill your strength, intellect and athletism.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {Sportsclubs.map((club) => (
               <ClubCard key={club.name} club={club} />
             ))}
           </div>
