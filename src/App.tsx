@@ -78,7 +78,7 @@ const clubs: Club[] = [
     instagram: 'crispr_iiitn',
     image: CRISPR,
     description: ' Central Research Initiative and Student Public Relations'
-  }
+  },
   // Non-Technical Clubs
   {
     name: 'ORATOR',
